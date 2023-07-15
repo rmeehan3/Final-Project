@@ -1,0 +1,17 @@
+CREATE TABLE Audio (
+AudioID INT PRIMARY KEY,
+AudioName VARCHAR(255),
+AudioAmount INT
+);
+
+CREATE TABLE Visual (
+VisualID INT PRIMARY KEY,
+VisualName VARCHAR(255),
+VisualAmount INT
+);
+
+CREATE TABLE Other (
+OtherID INT PRIMARY KEY,
+OtherName VARCHAR(255),
+OtherAmount INT
+);
