@@ -12,3 +12,14 @@ def viewAudio():
     print("All Audio Equipment\n---------------------\nNumber\tName\tAmount\n---------------------")
     rows = cursor.execute("SELECT * FROM Audio")
     print(rows.fetchall())
+
+def addAudioItem():
+    a_id = input('Enter ID: ')
+    a_name = input('Audio Item:')
+    a_amount = input('Quantity:')
+    cursor.execute("""
+    INSERT INTO Audio(AudioID, AudioName, AudioAmount)
+    VALUES (?,?,?)
+    """, (a_id, a_name, a_amount))
+    connection.commit ()
+    print ( 'Data entered successfully.' )
