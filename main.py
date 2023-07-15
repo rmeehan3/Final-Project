@@ -1,8 +1,11 @@
 from functions import *
 
-print("1. Audio\n2. Visual\n3. Other\n4. Add item TEST")
+print("1. Audio\n2. Visual\n3. Other\n4. Add item TEST\n5. Delete item TEST")
 
 choice = int(input("Enter your choice: "))
+
+if choice == 5:
+    delAudioItem()
 
 if choice == 4:
     addAudioItem()

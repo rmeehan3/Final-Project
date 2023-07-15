@@ -23,3 +23,9 @@ def addAudioItem():
     """, (a_id, a_name, a_amount))
     connection.commit ()
     print ( 'Data entered successfully.' )
+
+def delAudioItem():
+    del_id = input('Enter ID to delete: ')
+    cursor.execute("""DELETE FROM Audio WHERE AudioID = ?""", (del_id,))
+    connection.commit()
+    print("Item with ID:", del_id,"successfuly deleted.")
