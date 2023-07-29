@@ -4,7 +4,6 @@ from tkinter import messagebox
 from tkinter import *
 import sv_ttk
 import sqlite3
-# export to exe
 
 # Creating main window
 window = tkinter.Tk()
